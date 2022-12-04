@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+html {
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #a8345c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #FF5791;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+.welcome {
+	background-color: black;
+	background-image: url(assets/banner.jpg);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-image {
+	width: 100%;
+	height: auto;
+}
+
+.inner-container {
+	background-color: #0f0e13bf;
+	background-image:
+		radial-gradient(at 0% 0%, #100f15 0, transparent 50%),
+		radial-gradient(at 50% 0%, #2f3e6a 0, transparent 50%),
+		radial-gradient(at 100% 0%, #722741 0, transparent 50%);
+	padding: 100px 100px 0px 100px;
+	height: 100%;
+	width: 100%;
+}
+
+/* boxes left-right */
+.two_box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 100px;
+	justify-content: center;
+	justify-items: center;
+	width: 100%;
+}
+
+/* left box container */
+.details-container {
+	margin-left: 10px;
+	margin-top: 100px;
+}
+
+.subheading {
+	font-size: 22px;
+	color: white;
+	font-weight: 200;
+}
+
+.details-container p {
+	color: white;
+	font-weight: 100;
+}
+
+.description {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.message_box {
+	height: 100px;
+}
+
+.styled_text {
+	background: #758CFF;
+	background: linear-gradient(to right, #758CFF 0%, #FF5791 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.connect_button button {
+	font-family: "Poppins", sans-serif;
+	margin-top: 20px;
+	padding: 12px 24px;
+	background: linear-gradient(90deg, #2600ff23 0%, #ff002b37 100%);
+	color: white;
+	border-radius: 50px;
+	border: solid 1px white;
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.connect_button button:hover {
+	background: linear-gradient(90deg, #2600ff4e 0%, #ff002b67 100%);
+}
+
+button i {
+	margin-left: 5px;
+}
+
+/* right container */
+.payment_container {
+	width: 100%;
+}
+
+.card_container {
+	width: 100%;
+	display: grid;
+	justify-items: center;
+}
+
+.card {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	background-color: hsla(343, 100%, 62%, 1);
+	background-image:
+		radial-gradient(at 56% 100%, rgba(71, 240, 229, 0.752) 0px, transparent 50%),
+		radial-gradient(at 91% 66%, rgba(249, 160, 138, 0.771) 0px, transparent 50%),
+		radial-gradient(at 68% 27%, rgba(254, 113, 214, 0.752) 0px, transparent 50%),
+		radial-gradient(at 0% 2%, rgba(28, 114, 253, 0.492) 0px, transparent 50%);
+}
+
+.card_icon i {
+	font-size: 24px;
+	color: white;
+	border-radius: 50px;
+	border: solid 1px white;
+	padding: 10px 14px;
+	margin: 10px;
+}
+
+.card_details {
+	margin: 60px 0px 0px 10px;
+}
+
+.card_details p {
+	margin: 0px;
+}
+
+.wallet-address {
+	font-size: 14px;
+	color: white;
+	font-weight: 100;
+}
+
+.card_info {
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
+}
+
+.input-container {
+	width: 100%;
+	margin-top: 20px;
+	display: grid;
+	justify-items: center;
+}
+
+.inner-container input,
+.inner-container textarea {
+	width: 400px;
+	padding: 10px;
+	font-family: "Poppins", sans-serif;
+	background-color: transparent;
+	border: solid 1px white;
+	border-radius: 10px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.send_now {
+	cursor: pointer;
+	padding: 10px;
+	font-family: "Poppins", sans-serif;
+	width: 400px;
+	background: linear-gradient(90deg, #2600ff23 0%, #ff002b37 100%);
+	border: solid 1px white;
+	border-radius: 50px;
+	color: white;
+}
+
+.send_now:hover {
+	background: linear-gradient(90deg, #2600ff4e 0%, #ff002b67 100%);
+}
+
+.footer {
+	margin-top: 175px;
+	border-top: solid 1px rgba(255, 255, 255, 0.337);
+	color: white;
+	text-align: center;
+}
+
+/* loader css */
+
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+/* transations css */
+
+div.scrollmenu {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.lt-heading {
+	margin: 10px;
+	color: white;
+	font-weight: 400;
+}
+
+div.scrollmenu .latestTransation {
+	display: inline-block;
+	color: white;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	width: 300px;
+	border: solid 1px #ff579245;
+	padding: 5px;
+}
+
+div.scrollmenu .latestTransation p {
+	font-weight: 100;
+	font-size: 12px;
+	color: #ffffffa1;
+}
+
+a {
+	text-decoration: none;
+	color: #FF5791;
+	display: inline-block;
+	position: relative;
+}
+
+a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #FF5791;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.from-to,
+.message {
+	margin: 0;
+	border-radius: 10px;
+	min-width: 300px;
+	white-space: pre-line;
+	margin-bottom: 2px;
+}
+
+/* icons css */
+
+.fa-hand-holding-dollar {
+	padding: 5px 5px;
+	margin-right: 5px;
+	border: solid 1px #722741;
+	background-color: #a8345d4b;
+	border-radius: 10px;
+	color: #a8345c;
+}
+
+.fa-ethereum {
+	padding: 5px 7.5px;
+	margin-right: 5px;
+	border: solid 1px #722741;
+	background-color: #a8345d4b;
+	border-radius: 10px;
+	color: #a8345c;
+}
+
+.fa-envelope {
+	padding: 5px 5.5px;
+	margin-right: 5px;
+	border: solid 1px #722741;
+	background-color: #a8345d4b;
+	border-radius: 10px;
+	color: #a8345c;
+}
+
+.fa-calendar {
+	padding: 5px 6.5px;
+	margin-right: 5px;
+	border: solid 1px #722741;
+	background-color: #a8345d4b;
+	border-radius: 10px;
+	color: #a8345c;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.footer p {
+	margin: 0;
+	padding: 16px;
+	font-weight: 100;
+}
+
+@media (max-width:917px) {
+	.inner-container {
+		padding: 10px 10px 0px 10px;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width:720px) {
+	.inner-container {
+		padding: 10px 10px 0px 10px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.two_box {
+		grid-template-columns: 1fr;
+		gap: 100px;
+	}
+
+	.inner-container input,
+	.inner-container textarea {
+		width: 100%;
+	}
+
+	.send_now {
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+	}
+}
